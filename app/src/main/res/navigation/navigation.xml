@@ -18,5 +18,14 @@
         android:id="@+id/frafment1"
         android:name="com.e.myfragment_int.Fragment1"
         android:label="fragment_frafment1"
-        tools:layout="@layout/fragment_frafment1" />
+        tools:layout="@layout/fragment_frafment1" >
+        <action
+            android:id="@+id/action_frafment1_to_fragment2"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.e.myfragment_int.Fragment2"
+        android:label="fragment_2"
+        tools:layout="@layout/fragment_2" />
 </navigation>

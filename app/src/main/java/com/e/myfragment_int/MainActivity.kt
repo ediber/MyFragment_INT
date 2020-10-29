@@ -9,6 +9,10 @@ import android.os.Bundle
 // view model
 // live data
 
+// task
+// create 3rd fragment
+// move from 2nd to 3rd fragment with a click event
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
