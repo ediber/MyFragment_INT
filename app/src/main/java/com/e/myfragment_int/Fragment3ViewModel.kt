@@ -17,8 +17,17 @@ class Fragment3ViewModel : ViewModel() {
             return data0
         }
 
+    private var data1 = MutableLiveData<String>()
+    val _data1 : LiveData<String>
+        get() {
+            return data1
+        }
+
+
+
     // 1
-    fun addData0(str0: String) {
+    fun addData(str0: String) {
         data0.value = str0
+        data1.value = str0 + "aaa"
     }
 }

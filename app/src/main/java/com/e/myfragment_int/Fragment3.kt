@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.lifecycle.Observer
 
 class Fragment3 : Fragment() {
@@ -36,6 +37,9 @@ class Fragment3 : Fragment() {
             textView.text = it
         })
 
+        viewModel._data1.observe(viewLifecycleOwner, Observer {
+            Toast.makeText(context, it, Toast.LENGTH_LONG).show()
+        })
 
     }
 
@@ -49,7 +53,7 @@ class Fragment3 : Fragment() {
         // 0
         button.setOnClickListener(View.OnClickListener {
             val str0 = editText.text.toString()
-            viewModel.addData0(str0)
+            viewModel.addData(str0)
         })
     }
 
