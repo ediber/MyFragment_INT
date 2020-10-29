@@ -36,7 +36,7 @@ class Fragment3 : Fragment() {
             // called every time when live data changes
             textView.text = it
         })
-
+//
         viewModel._data1.observe(viewLifecycleOwner, Observer {
             Toast.makeText(context, it, Toast.LENGTH_LONG).show()
         })
